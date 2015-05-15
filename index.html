@@ -1,0 +1,46 @@
+<html>
+<header>
+  <title>NXTBubble verifier</title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+</header>
+
+<body>
+  <div class="container">
+    <div class="col-md-12">
+      <h1>NXT Bubble verifier</h1>
+    </div>
+
+    <div class="col-md-6">
+      <p>Fill in this form to verify the outcome of the games</p>
+      <form>
+        <div class="form-group">
+          <label>Hash of game to check</label>
+          <input type="text" class="form-control" id="hash1">
+        </div>
+        <div class="form-group">
+          <label>Outcome of game to check</label>
+          <input type="text" class="form-control" id="outcome1" disabled>
+        </div>
+        <div class="form-group">
+          <label>Hash of game before</label>
+          <input type="text" class="form-control" id="hash2" disabled>
+        </div>
+        <div class="form-group">
+          <label>Outcome of game before</label>
+          <input type="text" class="form-control" id="outcome2" disabled>
+        </div>
+        <input type="submit" class="btn btn-success" id="submit" value="Submit">
+      </form>
+    </div>
+    <div class="col-md-6">
+
+    </div>
+  </div>
+
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/hmac-sha256.js"></script>
+  <script src="/app.js"></script>
+</body>
+
+</html>
